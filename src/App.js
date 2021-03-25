@@ -4,11 +4,11 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 function App() {
   return (
-    <div className="">
+    <div className="App">
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path="/" exact component={Home} />
+          {/* <Route path="/" exact component={Home} /> */}
         </Switch>
       </BrowserRouter>
     </div>
