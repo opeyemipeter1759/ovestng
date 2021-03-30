@@ -27,8 +27,8 @@ const Header = () => {
     }
   };
   return (
-    <div className="nav">
-      <nav className="navbar">
+    <nav className="navbar">
+      <div className="contain">
         <Link to="/">
           <img src={logo} alt="" className="navbar-logo" />
         </Link>
@@ -87,9 +87,9 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <SignUpButton />
-      </nav>
-    </div>
+        <SignUpButton className="btn-in" />
+      </div>
+    </nav>
   );
 };
 export default Header;

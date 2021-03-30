@@ -4,7 +4,7 @@ import "./SignUpButton.css";
 function SignUpButton() {
   return (
     <div>
-      <button className="btn">Start Investing</button>
+      <button className="btnSignUp">Start Investing</button>
     </div>
   );
 }
