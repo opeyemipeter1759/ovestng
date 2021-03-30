@@ -1,14 +1,14 @@
 import "./App.css";
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Header from "./components/Header";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
+import Navba from "./components/Navba";
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Switch>
           <Route path="/">
-            <Header className="nav-header"/>
+            <Navba />
             <Home />
           </Route>
         </Switch>

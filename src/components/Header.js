@@ -27,7 +27,7 @@ const Header = () => {
     }
   };
   return (
-    <nav className="navbar">
+    <nav className="navbar1">
       <div className="contain">
         <Link to="/">
           <img src={logo} alt="" className="navbar-logo" />
@@ -37,50 +37,50 @@ const Header = () => {
           <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+          <li className="nav-1">
+            <Link to="/" className="nav-2" onClick={closeMobileMenu}>
               Home
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="#" className="nav-links" onClick={closeMobileMenu}>
+          <li className="nav-1">
+            <Link to="#" className="nav-2" onClick={closeMobileMenu}>
               OLand
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+          <li className="nav-1">
+            <Link to="/" className="nav-2" onClick={closeMobileMenu}>
               About Us
             </Link>
           </li>
           <li
-            className="nav-item"
+            className="nav-1"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/" className="nav-2" onClick={closeMobileMenu}>
               More <i className=" fas fa-caret-down" />
             </Link>
             {dropdown && <Dropdown />}
           </li>
-          <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+          <li className="nav-1">
+            <Link to="/" className="nav-2" onClick={closeMobileMenu}>
               Become an Agent
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+          <li className="nav-1">
+            <Link to="/" className="nav-2" onClick={closeMobileMenu}>
               Contact Us
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/login" className="nav-links" onClick={closeMobileMenu}>
+          <li className="nav-1">
+            <Link to="/login" className="nav-2" onClick={closeMobileMenu}>
               Login
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-1">
             <Link
               to="/sign-Up"
-              className="nav-links-mobile"
+              className="nav-2-mobile"
               onClick={closeMobileMenu}
             >
               Start Investing

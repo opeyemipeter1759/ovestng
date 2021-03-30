@@ -1,0 +1,143 @@
+nav {
+  -moz-box-shadow: 2px 2px 2px 2px #ccc;
+  -webkit-box-shadow: 2px 2px 2px 2px #ccc;
+  box-shadow: 2px 2px 2px 2px #ccc;
+  top: 0;
+  position: fixed;
+  background-color: #fff;
+  z-index: 2;
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0px auto 0px auto;
+  z-index: 99;
+}
+.cont1 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  margin: 0 auto 0 auto;
+  width: 90%;
+}
+
+.fas {
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 20px;
+}
+.menu-icon .fa-times {
+  transform: rotate(360deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-icon .fa-bars {
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.logo img {
+  width: 80%;
+}
+
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 0 0;
+}
+
+.menu-list li a {
+  font-size: 14px;
+  color: #0066f6;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin: 5px;
+}
+.menu-list li:last-child a {
+  transition: all 0.3s ease-in-out;
+  background-color: #0066f6;
+  border-width: 2px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+}
+.menu-list li:last-child a:hover {
+  transition: all 0.3s ease-in-out;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #0066f6;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  color: rgb(63, 63, 87);
+}
+.menu-list li a:hover,
+.menu-list li a.active {
+  background-color: rgb(240, 240, 240);
+  border-radius: 1px 0 1px 0;
+  transition: all 0.2s ease-out;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    font-size: 20px;
+  }
+  .menu-list li a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-icon {
+    display: block;
+  }
+  .menu-list {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    right: 0;
+    top: 64px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-list li {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-list li:last-child {
+    margin-bottom: 0px;
+  }
+
+  .menu-list li a,
+  .menu-list li:last-child a {
+    width: 100px;
+    display: block;
+    margin: auto;
+  }
+
+  .menu-list.close {
+    right: -100%;
+    transition: all 0.5s ease-in-out;
+  }
+}
