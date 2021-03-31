@@ -1,18 +1,27 @@
 import React from "react";
 import "./home.css";
-import { Box, SimpleGrid } from "@chakra-ui/react";
+// import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
 import android from "../components/images/android.png";
 import ios from "../components/images/ios.png";
 import img14 from "../components/images/landing.png";
+import AboutUs from "./AboutUs";
 
 function Home() {
   return (
     <div className="container">
-      <SimpleGrid columns={2} spacing={2}>
-        <Box height="80px">
+      <Grid container spacing={2}>
+        <Grid
+          item
+          sm={6}
+          md={6}
+          lg={6}
+          display={{ xs: "none" }}
+          className="image-ses"
+        >
           <img src={img14} alt="" className="image-14" />
-        </Box>
-        <Box height="80px">
+        </Grid>
+        <Grid item xs={12} sm={6} md={6} lg={6}>
           <div className="header-text-session">
             <h1 className="text-title">
               Think Richly <br /> Invest Your Money
@@ -33,8 +42,9 @@ function Home() {
               />
             </div>
           </div>
-        </Box>
-      </SimpleGrid>
+        </Grid>
+      </Grid>
+      <AboutUs />
     </div>
   );
 }

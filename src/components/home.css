@@ -3,12 +3,16 @@
   margin: 100px auto;
 }
 .image-14 {
-  margin: -200px 0 0px;
+  margin: 0px 0px 0px 70px;
   padding: 0;
-  width: 100%;
+  width: 60%;
+  -ms-transform: rotate(-20deg); /* IE 9 */
+  transform: rotate(-10deg);
+  transition: all 0.2s ease-in-out;
 }
 
 .header-text-session {
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   /* justify-content: end; */
@@ -16,10 +20,10 @@
 .text-title {
   color: #0066f6;
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   font-style: normal;
   margin-bottom: 40px;
-  font-size: 50px;
+  font-size: 45px;
   line-height: 55px;
   text-align: end;
 }
@@ -78,4 +82,10 @@
   justify-content: center;
   align-items: center;
   max-width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .image-ses {
+    display: none;
+  }
 }

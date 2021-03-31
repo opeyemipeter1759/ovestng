@@ -10,7 +10,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   margin: 0px auto 0px auto;
   z-index: 99;
 }
@@ -21,7 +21,8 @@ nav {
   justify-content: space-between;
   height: 60px;
   margin: 0 auto 0 auto;
-  width: 90%;
+  width: 90vw;
+  width: 90vw;
 }
 
 .fas {
@@ -97,7 +98,7 @@ nav {
 
 @media screen and (max-width: 800px) {
   .logo {
-    font-size: 20px;
+    width: 50%;
   }
   .menu-list li a {
     font-size: 14px;
@@ -105,7 +106,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .menu-icon {
     display: block;
   }
