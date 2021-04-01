@@ -14,7 +14,11 @@
 }
 .title {
   color: rgb(63, 63, 87);
-  margin-top: 100px;
+  padding-top: 50px;
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: -8;
 }
 hr {
   margin-top: -6px !important;

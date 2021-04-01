@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { TweenMax } from "gsap";
 import "./home.css";
 import Grid from "@material-ui/core/Grid";
 import android from "../components/images/android.png";
@@ -7,8 +8,13 @@ import img14 from "../components/images/three-users.jpg";
 import AboutUs from "./AboutUs";
 
 function Home() {
+  let app = useRef(null);
+
+  useEffect(() => {
+    TweenMax.to(app, 0, { css: { visibility: "visible" } });
+  });
   return (
-    <div>
+    <div className="home" ref={(el) => (app = el)}>
       <div className="container">
         <Grid container spacing={6}>
           <Grid item xs={12} sm={6} md={6} lg={6}>
@@ -22,7 +28,10 @@ function Home() {
                 and investment industry with impressive interest rates. OVest is
                 secure, trusted and efficient.
               </p>
-              <button className="btn-start">Get Started</button>
+              <p className="btn-st">
+                <button className="btn-start">Get Started</button>
+                <button className="btn-start">Get Started</button>
+              </p>
               <div className="mobile-apps">
                 <img
                   src={ios}
