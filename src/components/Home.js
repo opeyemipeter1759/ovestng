@@ -9,42 +9,48 @@ import AboutUs from "./AboutUs";
 
 function Home() {
   return (
-    <div className="container">
-      <Grid container spacing={6}>
-        <Grid item xs={12} sm={6} md={6} lg={6}>
-          <div className="header-text-session">
-            <h1 className="text-title">
-              Think Richly <br /> Invest Your Money
-            </h1>
-            <p>
-              OVest is a registered and growing investment platform managed by a
-              team of experienced and competent professionals in the finance and
-              investment industry with impressive interest rates. OVest is
-              secure, trusted and efficient.
-            </p>
-            <button className="btn-start">Get Started</button>
-            <div className="mobile-apps">
-              <img src={ios} className="download app_store_badges" alt="ios" />
-              <img
-                src={android}
-                className="download app_store_badges"
-                alt="android"
-              />
+    <div>
+      <div className="container">
+        <Grid container spacing={6}>
+          <Grid item xs={12} sm={6} md={6} lg={6}>
+            <div className="header-text-session">
+              <h1 className="text-title">
+                Think Richly <br /> Invest Your Money
+              </h1>
+              <p>
+                OVest is a registered and growing investment platform managed by
+                a team of experienced and competent professionals in the finance
+                and investment industry with impressive interest rates. OVest is
+                secure, trusted and efficient.
+              </p>
+              <button className="btn-start">Get Started</button>
+              <div className="mobile-apps">
+                <img
+                  src={ios}
+                  className="download app_store_badges"
+                  alt="ios"
+                />
+                <img
+                  src={android}
+                  className="download app_store_badges"
+                  alt="android"
+                />
+              </div>
             </div>
-          </div>
-        </Grid>
+          </Grid>
 
-        <Grid
-          item
-          sm={6}
-          md={6}
-          lg={6}
-          display={{ xs: "none" }}
-          className="image-ses"
-        >
-          <img src={img14} alt="" className="image-14" />
+          <Grid
+            item
+            sm={6}
+            md={6}
+            lg={6}
+            display={{ xs: "none" }}
+            className="image-ses"
+          >
+            <img src={img14} alt="" className="image-14" />
+          </Grid>
         </Grid>
-      </Grid>
+      </div>
       <AboutUs />
     </div>
   );
