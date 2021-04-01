@@ -1,28 +1,3 @@
-//   const classes = useStyles();
-//   return (
-//     <div className={classes.root}>
-//
-//       <Grid className="content" container spacing={2}>
-//         <Grid item xs={12} sm={6}>
-//           <div className=" icon-session">
-//             <img className="sure-icon" src={sure} alt="" />
-//           </div>
-//           <p className="content-text">
-//
-//           </p>
-//           <p className="content-text">
-//
-//           </p>
-//         </Grid>
-//         <Grid item xs={12} sm={6} l>
-//           <div className=" icon-session">
-//             <img className="sure-icon" src={sure} alt="" />
-//           </div>
-//
-//         </Grid>
-//       </Grid>
-//     </div>
-
 import React from "react";
 import "./About.css";
 import Grid from "@material-ui/core/Grid";

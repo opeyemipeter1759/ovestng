@@ -1,6 +1,5 @@
 import React from "react";
 import "./home.css";
-// import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import android from "../components/images/android.png";
 import ios from "../components/images/ios.png";
