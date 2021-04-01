@@ -4,23 +4,13 @@ import "./home.css";
 import Grid from "@material-ui/core/Grid";
 import android from "../components/images/android.png";
 import ios from "../components/images/ios.png";
-import img14 from "../components/images/landing.png";
+import img14 from "../components/images/three-users.jpg";
 import AboutUs from "./AboutUs";
 
 function Home() {
   return (
     <div className="container">
-      <Grid container spacing={2}>
-        <Grid
-          item
-          sm={6}
-          md={6}
-          lg={6}
-          display={{ xs: "none" }}
-          className="image-ses"
-        >
-          <img src={img14} alt="" className="image-14" />
-        </Grid>
+      <Grid container spacing={6}>
         <Grid item xs={12} sm={6} md={6} lg={6}>
           <div className="header-text-session">
             <h1 className="text-title">
@@ -42,6 +32,17 @@ function Home() {
               />
             </div>
           </div>
+        </Grid>
+
+        <Grid
+          item
+          sm={6}
+          md={6}
+          lg={6}
+          display={{ xs: "none" }}
+          className="image-ses"
+        >
+          <img src={img14} alt="" className="image-14" />
         </Grid>
       </Grid>
       <AboutUs />

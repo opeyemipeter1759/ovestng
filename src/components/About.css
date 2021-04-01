@@ -1,0 +1,49 @@
+.title {
+  color: rgb(63, 63, 87);
+  margin-top: 100px;
+}
+hr {
+  margin-top: -6px !important;
+  width: 30%;
+  margin: 0 auto;
+  background-color: #fd720a !important;
+  color: #fd720a !important;
+  border: solid 1px #fd720a !important;
+  height: 1px !important;
+}
+
+.content {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+  height: 200px !important;
+}
+.icon-session {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(247, 247, 247);
+  width: 20%;
+  margin: 0 auto 12px;
+  padding: 10px 10px;
+}
+.sure-icon {
+  width: 50%;
+}
+.content-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(63, 63, 87);
+  margin-bottom: 100px;
+  /* margin-left: 30px; */
+}
+
+.about-img {
+  background-image: url(../components/images/three-users.jpg);
+  width: 40% !important;
+  /* object-fit: contain !important; */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

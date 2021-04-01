@@ -3,12 +3,16 @@
   margin: 100px auto;
 }
 .image-14 {
-  margin: 0px 0px 0px 70px;
+  margin: 50px 0px 0px 0px;
   padding: 0;
-  width: 60%;
-  -ms-transform: rotate(-20deg); /* IE 9 */
-  transform: rotate(-10deg);
+  width: 100%;
+  border-radius: 15px 0 15px 0;
+  /* -ms-transform: rotate(-20deg); /* IE 9 */
+  /* transform: rotate(-10deg);  */
   transition: all 0.2s ease-in-out;
+  -moz-box-shadow: 2px 2px 2px 2px #ccc;
+  -webkit-box-shadow: 2px 2px 2px 2px #ccc;
+  box-shadow: 3px 2px 2px 2px #ccc;
 }
 
 .header-text-session {
@@ -25,13 +29,13 @@
   margin-bottom: 40px;
   font-size: 45px;
   line-height: 55px;
-  text-align: end;
+  text-align: start;
 }
 .header-text-session > p {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  text-align: end;
+  text-align: start;
   font-family: "Roboto", sans-serif;
 
   color: rgb(63, 63, 87);
@@ -49,7 +53,7 @@
   color: rgb(63, 63, 87);
   width: 250px;
   margin-top: 20px;
-  align-self: flex-end;
+  align-self: flex-start;
   transition: all 0.3s ease-in-out;
 }
 .btn-start:hover {
@@ -65,16 +69,16 @@
   color: #fff;
   width: 250px;
   margin-top: 20px;
-  align-self: flex-end;
+  align-self: flex-start;
 }
 .mobile-apps {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .app_store_badges {
   width: 25%;
   margin-top: 20px;
-  margin-left: 5px;
+  margin-left: 1px;
   cursor: pointer;
 }
 .header-image {
@@ -83,7 +87,6 @@
   align-items: center;
   max-width: 500px;
 }
-
 @media screen and (max-width: 768px) {
   .image-ses {
     display: none;
