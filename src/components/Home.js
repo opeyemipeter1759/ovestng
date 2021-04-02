@@ -29,10 +29,10 @@ function Home() {
                 secure, trusted and efficient.
               </p>
               <p className="btn-st">
-                <button className="btn-start">Get Started</button>
-                <button className="btn-start">Get Started</button>
+                <button className="btn-start1">Get Started</button>
+                <button className="btn-start2">Login</button>
               </p>
-              <div className="mobile-apps">
+              {/* <div className="mobile-apps">
                 <img
                   src={ios}
                   className="download app_store_badges"
@@ -43,7 +43,7 @@ function Home() {
                   className="download app_store_badges"
                   alt="android"
                 />
-              </div>
+              </div> */}
             </div>
           </Grid>
 

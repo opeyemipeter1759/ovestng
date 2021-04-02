@@ -44,45 +44,56 @@
   color: rgb(63, 63, 87);
 }
 .btn-st {
+  margin-top: 40px;
   display: flex;
 }
-.btn-start {
-  border-width: 2px;
+.btn-start2 {
+  border-width: 1px;
   border-style: solid;
   border-color: #0066f6;
   border-radius: 5px;
-  padding: 5px 5px;
+  padding: 10px 10px;
   font-size: 16px;
   cursor: pointer;
   outline: none;
   background-color: transparent;
   color: rgb(63, 63, 87);
   width: 150px;
-  margin: 20px 10px 10px 0px;
   align-self: flex-start;
   transition: all 0.3s ease-in-out;
+  margin-top: 20px;
 }
-.btn-start:hover {
-  transition: all 0.3s ease-in-out;
-  border-width: 2px;
-  /* border-style: solid; */
+.btn-start2:hover {
+  width: 152px;
+  background-color: #ccc;
+  border-style: none;
+}
+.btn-start1 {
+  transition: all 1s;
+  border-width: 1px;
+  border-style: none;
   background-color: #0066f6;
   border-radius: 5px;
-  padding: 5px 5px;
+  padding: 10px 10px;
   font-size: 16px;
   cursor: pointer;
   outline: none;
   color: #fff;
   width: 150px;
-  margin-top: 20px;
   align-self: flex-start;
+  margin: 20px 5px 10px 0px;
 }
+.btn-start1:hover {
+  width: 152px;
+  background-color: #0448a7;
+}
+
 .mobile-apps {
   display: flex;
   justify-content: flex-start;
 }
 .app_store_badges {
-  width: 25%;
+  width: 150px;
   margin-top: 20px;
   margin-left: 1px;
   cursor: pointer;
