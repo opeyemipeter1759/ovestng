@@ -5,10 +5,17 @@ import "./Navba.css";
 import menuList from "./MenuList";
 const Navba = () => {
   const [clicked, setClicked] = useState(false);
+  const closeMobileMenu = () => setClicked(false);
+
   const menu = menuList.map(({ url, title }, index) => {
     return (
       <li key={index}>
-        <NavLink exact to={url} activeClassName="active">
+        <NavLink
+          onClick={closeMobileMenu}
+          exact
+          to={url}
+          activeClassName="active"
+        >
           {title}
         </NavLink>
       </li>
