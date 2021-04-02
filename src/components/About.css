@@ -1,6 +1,6 @@
 .about-us {
   width: 98vw;
-  background-color: #f9fbfc !important;
+  background-color: #00234a !important;
 }
 .content-lead {
   margin: 0 auto;
@@ -13,7 +13,7 @@
   width: 70%;
 }
 .title {
-  color: rgb(63, 63, 87);
+  color: #fff;
   padding-top: 50px;
   font-size: 47px;
   font-weight: 700;
@@ -50,6 +50,5 @@ hr {
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12) !important;
 }
 
-@media screen and (max-width:997px){
-  
+@media screen and (max-width: 997px) {
 }

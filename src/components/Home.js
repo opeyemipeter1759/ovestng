@@ -4,7 +4,7 @@ import "./home.css";
 import Grid from "@material-ui/core/Grid";
 import android from "../components/images/android.png";
 import ios from "../components/images/ios.png";
-import img14 from "../components/images/three-users.jpg";
+import img14 from "../components/images/app-screenshot-investment-platform-nigeria.png";
 import AboutUs from "./AboutUs";
 
 function Home() {
